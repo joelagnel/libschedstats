@@ -119,9 +119,8 @@ std::ostream& operator<<(std::ostream& os, const SchedStats& s) {
   return os;
 }
 
-#define SCHEDSTATS_PARSE_TOKEN(name) \
-  name = std::stoi(tmp);             \
-  // std::cout << "Found " #name " " << name << std::endl;             \
+#define SCHEDSTATS_PARSE_TOKEN(name)                                \
+  name = std::stoi(tmp);                                            \
   if (name < 0) {                                                   \
     std::cerr << "Invalid " #name " parsed: " << name << std::endl; \
     cpu_nr = -1;                                                    \
