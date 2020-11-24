@@ -1,7 +1,6 @@
 #include "libschedstats.h"
 
 #include <chrono>
-#include <ctime>
 #include <iomanip>
 #include <iostream>
 #include <string>
